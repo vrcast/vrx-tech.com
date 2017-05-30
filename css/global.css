@@ -1,0 +1,47 @@
+body {
+	font-size: 16px;
+	background: white;
+	color: white;
+	font-family: AbadiMT;
+	position: relative;
+	margin: 0;
+}
+@font-face {
+	font-family: AbadiMT;
+	src: url(abadi.woff);
+}
+html,body{
+  height:100%;
+}
+* {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1 {
+	background: black;
+	display: table;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 7px 20px 5px;
+}
+p {
+	color: black;
+	font-size: 20px;
+}
+.outer {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.job {
+	margin: auto;
+	display: table;
+}
