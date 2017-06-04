@@ -30,6 +30,13 @@ p {
 	color: black;
 	font-size: 20px;
 }
+a {
+	color: #fd5263;
+	text-decoration: none;
+}
+a:hover {
+	color: #24e0ff;
+}
 .outer {
 	display: table;
 	position: absolute;
@@ -44,4 +51,10 @@ p {
 .job {
 	margin: auto;
 	display: table;
+	max-width: 659px;
+}
+.job img {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
 }
