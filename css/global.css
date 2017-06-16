@@ -53,6 +53,14 @@ a:hover {
 	display: table;
 	max-width: 659px;
 }
+.job.en, .job.fr {
+	display: none;
+}
+
+body.en .job.en,
+body.fr .job.fr {
+	display: table;
+}
 .job img {
 	width: 100%;
 	display: block;

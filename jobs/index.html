@@ -5,14 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="../css/global.css">
 		<title>VRX Tech</title>
 	</head>
-	<body>
+	<body class="en">
 		<div class="job">
 			<img src="../images/logo.png"/>
-
 			<img src="../images/IMG_5831.jpg"/>
-
-			<h1>Hi there :-)</h1>
-			<p>We are a young startup (15 people) looking for developers to join us in our adventure :)</p>
+			<button type="button" data-lang="en">English</button><button type="button" data-lang="fr">Français</button>
+		</div>
+		<div class="job en">
+			<h1>Hi !</h1>
+			<p>We are a young startup, fan of VR (Virtual Reality). We are looking for developers to join us (15 people) in our adventure :)</p>
 			<p>Our main activity is Virtual Reality: we manage VR content, process it and then distribute / play it in our users' headsets.</p>
 			<p>We are a small team and your contribution matters!</p>
 			<p>Fluent French or English is mandatory.</p>
@@ -27,13 +28,11 @@
 			<p>We are looking for an experienced developer Javascript. Knowledge of WebGL or WebVR is a real plus ! <a href="mailto:jobs@vrx-tech.com">Apply</a></p>
 			
 			<p>The positions are open to interns and full time employees in our office in Barcelona, Spain.</p>
-
-			<br/>
-			<br/>
-
-			<h1>Hey :-)</h1>
-			<p>Jeune startup (15 personnes), nous recherchons des développeurs pour nous rejoindre !</p>
-			<p>Nous nous occupons de contenus en Réalité Virtuelle, notamment la conversion et la diffusion dans les casques de nos utilisateurs.</p>
+		</div>
+		<div class="job fr">
+			<h1>Salut !</h1>
+			<p>Nous sommes une jeune startup, fan de VR (Réalité Virtuelle). Viens nous rejoindre et participer à l'aventure !</p>
+			<p>On est spécialisé dans la Réalité Virtuelle, notamment la conversion et la diffusion dans les casques de nos utilisateurs.</p>
 			<p>Nous cherchons des développeurs full stack php expérimentés, avec des connaissances web (javascript html5) ou système (apache docker).</p>
 			<p>Français ou anglais courant obligatoire.</p>
 
@@ -47,9 +46,19 @@
 			<p>Nous recherchons un développeur Javascript. Connaitre WebGL ou WebVR est un réel plus ! <a href="mailto:jobs@vrx-tech.com">Postuler</a></p>
 			
 			<p>Le poste est ouvert aux stagiaires et aux employés à temps plein, dans nos bureaux de Barcelone, Espagne.</p>
-
-			<img src="../images/IMG_3925.jpg"/>
-
 		</div>
+		<div class="job">
+			<img src="../images/IMG_3925.jpg"/>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			crossorigin="anonymous"></script>
+		<script defer>
+			$(document).ready(function() {
+				$('button').on('click', function(e) {
+					$('body').removeClass('en fr').addClass($(this).data('lang'));
+					});
+				});
+		</script>
 	</body>
 </html>
